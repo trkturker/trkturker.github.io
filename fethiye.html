@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendi Web Projem</title>
+</head>
+
+<style>
+    .general {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 30%;
+        margin-right: 30%;
+
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: left !important;
+    }
+
+    body {
+        font-size: 1.2em;
+        background: #ffe6f3;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+</style>
+
+<body>
+
+    <header class="center">
+        <h1>FETHİYE MACERASI</h1>
+
+
+
+        <nav class="left">
+
+
+            <li><a href="index.html">Anasayfa</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#ozellik">Özellikleri</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#supergucler">Süper Güçler</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#maceralar">Maceraları</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#iletisim">İletişim</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="center" id=" anasayfa" style="margin-top: 50px;">
+
+
+
+            <img style="width: 400px; justify-content:center; align-items: center; margin: auto;"
+                src="fethiye-oludeniz.jpg" alt="">
+
+
+
+            <p>Bu web sitesi, benim <strong><i>"Süper Kahraman'ım"</i> </strong> olan biricik <strong>sevgilim </strong>
+                için hazırlanmıştır.</p>
+
+
+        </section>
+
+
+        <div class="general">
+
+            <section id="ozellik" style="margin-top: 100px;">
+
+                <h1 style="margin-bottom: 50px;">Maceranın Akılda Kalan Anları</h1>
+
+
+                <ul>
+                    <li>Denizin Dalgası</li>
+                    <br>
+                    
+                    <li>Kumsalın Taşlık Olmasıyla Çekilen Çile</li>
+                    <br>
+
+                    <li>Deniz Ayakkabısı ve Deniz Simiti Arayışı</li>
+                    <br>
+
+                    <li>Birlikte İlk Uzun Yol Macerası</li>
+                    <br>
+
+
+                </ul>
+            </section>
+
+            <section id="maceralar" style="margin-top: 100px;">
+
+                <h1 style="margin-bottom: 50px;">Maceralar</h1>
+
+                <p>Süper kahramanımın maceralarını burada bulabilirsiniz.</p>
+
+                <ul>
+
+
+
+                    <li>
+                        <a href="mugla.html">Muğla Akyaka Macerası</a>
+                    </li>
+                    <br>
+
+
+                    <li>
+                        <a href="kapadokya.html">Kapadokya Macerası</a>
+
+                    </li>
+
+
+
+
+                </ul>
+
+            </section>
+
+        </div>
+
+
+
+    </main>
+</body>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>
