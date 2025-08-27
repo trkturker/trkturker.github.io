@@ -4,406 +4,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kendi Web Projem</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Furniro</title>
 </head>
 
-<style>
-    body {
-        font-size: 1.2em;
-        background: #ffe6f3;
-        position: relative;
-        min-height: 100vh;
-        overflow-x: hidden;
-    }
 
-    * {
-        box-sizing: border-box
-    }
+<body class="font-[Poppins]">
 
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
+    <header>
 
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
+        <div class="bg-white h-25 flex justify-between items-center text-black">
 
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
+            <div class="flex justify-start items-center m-8 h-24">
+                <img src="./img/Meubel House_Logos-05.png" width="40" height="40" alt="">
+                <p class="font-[Montserrat] text-[34px] text-black p-2 font-bold">Furniro</p>
+            </div>
 
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
+            <div class="flex justify-center items-center m-8">
 
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    .general {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        margin-left: 30%;
-        margin-right: 30%;
-
-    }
-
-    .center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left {
-        display: flex;
-        flex-direction: row;
-        align-items: left !important;
-    }
-</style>
-
-<body>
-
-    <header class="center">
-        <h1>SÜPER KAHRAMANIM</h1>
+                <div class="links flex justify-center items-center m-24 gap-8">
 
 
+                    <div class="text-black text-base p-2 font-medium gap-2">Home</div>
+                    <div class="text-black text-base p-2 font-medium gap-2">Shop</div>
+                    <div class="text-black text-base p-2 font-medium gap-2">About</div>
+                    <div class="text-black text-base p-2 font-medium gap-2">Contact</div>
+                </div>
 
-        <nav class="left">
+                <div class="icons flex justify-center items-center m-12 gap-8">
 
+                    <img src="./img/mdi_account-alert-outline.png" width="22" height="22" alt="">
+                    <img src="./img/akar-icons_search.png" width="22" height="22" alt="">
+                    <img src="./img/akar-icons_heart.png" width="22" height="22" alt="">
+                    <img src="./img/ant-design_shopping-cart-outlined.png" width="22" height="22" alt="">
+                </div>
 
-            <!-- <li><a href="#anasayfa">Anasayfa</a></li>&nbsp;&nbsp;&nbsp;&nbsp; -->
-            <li><a href="#ozellik">Özellikleri</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-            <li><a href="#supergucler">Süper Güçler</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-            <li><a href="#maceralar">Maceraları</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-            <li><a href="#iletisim">İletişim</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
 
-
-        </nav>
-
+        </div>
 
     </header>
 
-    <main>
+    <div class="discover relative">
+
+        <img src="./img/scandinavian-interior-mockup-wall-decal-background 1.png" width="100%" height="100%" alt="">
+
+        <div class="absolute top-50 right-15 w-[643px] h-[443px] p-12 rounded-xl bg-[#FFF3E3]">
+            <h3 class="text-[16px] font-semibold text-[#333] mb-4">New Arrival</h3>
+            <h2 class="text-[52px] font-bold text-[#675938] mb-6">Discover Our New Collection</h2>
+            <p class="text-[18px]  mb-8 font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button
+                class="bg-[#B88E2F] text-white w-[222px] h-[74px] px-8 py-4 font-semibold hover:bg-white hover:text-[#B88E2F] transition-colors">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+    <div class="browse-the-range mb-12">
+
+        <div class="flex justify-center items-center">
+            <h3 class="text-[32px] font-bold mt-10 mb-2">Browse The Range</h3>
+        </div>
+        <div class="flex justify-center items-center">
+            <p class="text-[20px] font-extralight mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="images flex justify-center items-center gap-5 ">
+
+            <span class="img1">
+                <img class="rounded-xl mb-8" src="./img/image 106.png" alt="">
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Dining</p>
+            </span>
 
+            <span class="img2">
+                <img class="rounded-xl mb-8" src="./img/image 100.png" alt="">
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Living</p>
+            </span>
 
+            <span class="img3">
+                <img class="rounded-xl mb-8" src="./img/image 101.png" alt="">
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Bedroom</p>
+            </span>
+        </div>
 
+    </div>
 
 
-        <section class="center" id=" anasayfa" style="margin-top: 50px;">
+    <div class="flex justify-center items-center">
+        <h3 class="text-[32px] font-bold mt-10 mb-2">Our Products</h3>
+    </div>
 
-            <section class="center" style="margin-top: 10px;">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img style="width: 400px; justify-content:center; align-items: center; margin: auto;"
-                            src="foto1.jpg" alt="">
-                    </div>
+    <div class="flex justify-center items-center Our-Products ">
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img style="width: 400px; justify-content:center; align-items: center; margin: auto;"
-                            src="foto2.jpg" alt="">
-                    </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img style="width: 400px; justify-content:center; align-items: center; margin: auto;"
-                            src="foto3.jpg" alt="">
-                    </div>
+        <div class="images justify-center items-center grid grid-cols-4 m-20 mb-10 items-center gap-10  ">
 
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 1.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Syltherine</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Stylish Coffe Chair</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 2.500.00</p>
+            </div>
 
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 2.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Leviosa</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Stylish Coffe Chair</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 2.500.00</p>
+            </div>
 
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 3.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Lolito</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Luxury Big Sofa</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 7.500.00</p>
+            </div>
 
-                <p style="margin-top: 50px;">Bu web sitesi, benim <strong><i>"Süper Kahraman'ım"</i> </strong> olan
-                    biricik <strong>sevgilim </strong>
-                    için hazırlanmıştır.</p>
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/Images.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Respira</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Outdoor Bar Table And Stool</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 500.00</p>
+            </div>
 
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 5.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Grifo</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Night lamp</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 1.500.00</p>
+            </div>
 
-            </section>
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 6.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Muggo</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Small mug</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 150.00</p>
+            </div>
 
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 7.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Pingky</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Cute bed set</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 7.500.00</p>
+            </div>
 
+            <div class="card bg-[#F4F5F7] w-[285px] h-[450px]">
+                <img class=" mb-8 w-[285px] h-[301px]" src="./img/image 8.png" alt="">
+                <p class="text-[24px] text-center font-semibold text-[#333] ">Pingky</p>
+                <p class="text-[16px] text-center font-light text-[#898989] ">Cute bed set</p>
+                <p class="text-[20px] text-center font-semibold text-[#333] ">Rp 7.500.00</p>
+            </div>
 
-        </section>
 
 
-        <div class="general">
 
-            <section id="ozellik" style="margin-top: 50px;">
 
-                <h1 style="margin-bottom: 50px;">Özellikleri</h1>
+        </div>
 
-                <p>Kahramanımın inanılmaz özelliklerinden sadece birkaçı:</p>
 
-                <ul>
+    </div>
 
+    <div class="flex justify-center items-center mb-20">
+        <button
+            class="flex justify-center items-center text-[#B88E2F] border-[#B88E2F] border-[1px] w-[245px] h-[48px] font-semibold hover:bg-white hover:text-[#B88E2F] transition-colors">Show
+            More</button>
+    </div>
 
-                    <li>Neşelidir</li>
 
-                    <div style="margin-left: 20px;">
-                        <p>Neşesiyle sizin de modunuzu düzeltebilir.</p>
-                    </div>
-                    <br>
+    <div class="flex bg-[#fcf8f3] mb-40">
 
-                    <li>Oldukça Komiktir</li>
-                    <div style="margin-left: 20px;">
-                        <p>Ama kendi şakalarına en çok kendisi güler.</p>
-                    </div>
-                    <br>
+        <div class="w-[422px] ml-60 mt-30  mr-30">
 
-                    <li>Hafiften Zorbadır</li>
-                    <div style="margin-left: 20px;">
-                        <p>Sevdiği kişilerle dalga geçmeyi sever.</p>
-                    </div>
-                    <br>
 
-                    <li>Hazırlanması Uzun Sürer</li>
-                    <div style="margin-left: 20px;">
-                        <p>Maceraları için hazırlık yapması <strong>oldukça</strong> uzun sürer.</p>
-                    </div>
-                    <br>
+            <h3 class="text-[40px] font-bold text-[#333] mb-6 mt-20">50+ Beautiful rooms inspiration</h3>
 
+            <p class="text-[16px]  mb-8 font-medium">
+                Our designer already made a lot of beautiful prototipe of rooms that inspire you.
+            </p>
 
-                </ul>
-            </section>
 
-            <section id="supergucler" style="margin-top: 100px;">
-
-                <h1 style="margin-bottom: 50px;">Süper Güçler</h1>
-
-                <p>Bu kısımda kahramanımın süper güçlerinin bir kısmı yer almakta.</p>
-
-                <ul>
-
-
-                    <li>Çok Tatlıdır</li>
-
-                    <div style="margin-left: 20px;">
-                        <p>Görüp görebileceğiniz en tatlı, bir ömre bedel gülümsemeye sahiptir. Çıkık elmacık kemikleri, gözleri ve
-                            bakışları bu gücünün temel faktörleridir.</p>
-                    </div>
-                    <br>
-
-
-                    <li>Aşırı Derecede Doğal Bir Güzelliği Vardır</li>
-
-                    <div style="margin-left: 20px;">
-                        <p>Açıklama gerektirmemektedir.</p>
-                    </div>
-                    <br>
-
-                    <li>Çok Zekidir</li>
-
-                    <div style="margin-left: 20px;">
-                        <p>Çoğu derslerinden çalışmadan geçmeyi başarır. Ama işine gelmediği konularda bu gücünü çok
-                            kullanmaz.</p>
-                    </div>
-                    <br>
-
-
-                    <li>Çok Hızlı Sinirlenebilir</li>
-
-                    <div style="margin-left: 20px;">
-                        <p>Saniyenin onda biri hızında sinirlenebilmektedir ve bu sinirin derecesini ve neye sinirlenebileceğini kestirmek çok
-                            güçtür.</p>
-                    </div>
-                    <br>
-
-                    <li>Tiyatro Alanında Oldukça Yeteneklidir</li>
-
-                    <div style="margin-left: 20px;">
-                        <p>İzleyen herkesi hayran bırakacak, tiyatro ile uğraşanları kıskandıracak bir yeteneğe
-                            sahiptir.</p>
-                    </div>
-                    <br>
-
-                    <li>"Sarılma" Adındaki Hamlesiyle Anında Mutlu ve Huzurlu Hissettirebilir</li>
-
-                    <div style="margin-left: 20px;">
-                        <p><strong>Not:</strong> Bu hamle, kahramanımın en sevdiğim hamlelerinden biridir. </p>
-                    </div>
-                    <br>
-                </ul>
-            </section>
-
-            <section id="maceralar" style="margin-top: 100px;">
-
-                <h1 style="margin-bottom: 50px;">Maceralar</h1>
-
-                <p>Kahramanım'ın maceralarını burada bulabilirsiniz:</p>
-
-                <ul>
-
-
-
-                    <li>
-                        <a href="mugla.html">Muğla Akyaka Macerası</a>
-                    </li>
-                    <br>
-
-
-                    <li>
-                        <a href="kapadokya.html">Kapadokya Macerası</a>
-
-                    </li>
-                    <br>
-                    <li>
-                        <a href="fethiye.html">Fethiye Ölüdeniz Macerası</a>
-
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-
-
-
-
-            <section id="iletisim" style="margin-top: 100px;">
-                <h2>İletişim</h2>
-
-
-                <p>Siz de nasıl sevgilinizin süper kahramanı olursunuz bilgi almak için <strong>şimdi</strong> iletişime
-                    geçin!</p>
-
-
-                <form action="">
-                    <label for="ad">Ad:</label>
-                    <input required placeholder="Adınız" type="text"> <br><br>
-                    <label for="soyad">Soyad:</label>
-                    <input required placeholder="Soyadınız" type="text"> <br><br>
-                    <label for="e-mail">E Mail:</label>
-                    <input placeholder="E Mail Adresiniz" type="text"> <br><br>
-                    <label for="mesaj">Mesajınız:</label>
-                    <textarea style="width: 100%; height: 200px;"
-                        placeholder="Neden Sevgilinizin Süper Kahramanı Olmak İstiyorsunuz?"></textarea>
-                    <button onclick="alert('Form başarıyla gönderildi!');">Gönder</button>
-                </form>
-
-            </section>
+            <button
+                class="bg-[#B88E2F] text-white w-[222px] h-[74px] px-8 py-4 font-semibold hover:bg-white hover:text-[#B88E2F] transition-colors">
+                Buy Now
+            </button>
 
         </div>
 
 
 
-    </main>
+        <img class=" w-[404px] h-[582px]  flex justify-center items-center m-20 mr-0" src="./img/Image.png" alt="">
+        <img class="w-[372px] h-[486px] m-20 ml-5 mr-auto" src="./img/Rectangle 25.png" alt="">
+        <img class=" m-20 ml-5 mr-0" src="./img/Rectangle 26.png" alt="">
+
+
+
+    </div>
+
+    <div class="flex justify-center items-center">
+
+
+
+        <div class="flex-col justify-center items-center">
+            <div class="text-[20px] font-extralight">Share your setup with</div>
+            <div>
+                <h3 class="text-[32px] font-bold mb-2">#FuniroFurniture</h3>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="flex-col">
+
+        <span class="flex">
+
+            <span class="flex gap-5">
+                <img class="inline-block" src="./img/1.png" alt="">
+                <div class="inline-block w-[451px] h-[312px] mt-20">
+                    <img class="relative bottom-[-40px]" src="./img/2.png" alt="">
+                </div>
+
+                <img class="relative top-40" src="./img/3.png" alt="">
+                <img class="relative top-20 w-[290px] h-[348px]" src="./img/4.png" alt="">
+                <img src="./img/5.png" alt="">
+
+            </span>
+
+        </span>
+
+        <span>
+
+            <span class="flex gap-5 mt-5">
+
+                <img src="./img/6.png" alt="">
+                <span class="w-[344px] h-[242px] ">
+                    <img src="./img/7.png" alt="">
+                </span>
+
+            </span>
+
+        </span>
+
+        <img class="relative clear-both left-221 top-[-302px] w-[178px] h-[248px]" src="./img/8.png" alt="">
+        <img class="relative clear-both left-270 top-[-552px] w-[258px] h-[196x]" src="./img/9.png" alt="">
+
+    </div>
+
 </body>
 
+<hr class="border-[#c7c7c7]">
+<footer class="flex w-[100%]h-[505px]">
 
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    <div class="m-20 w-[100%] h-auto">
 
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+        <div class="grid grid-cols-4">
 
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
 
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-</script>
+            <div class="flex-col justify-center items-center">
+                <p class="text-[24px] font-semibold ">Furniro.</p>
+                <p class="text-[16px] font-normal mt-10  text-[#9F9F9F] ">400 University Drive Suite 200 Coral Gables,
+                </p>
+                <p class="text-[16px] font-normal text-[#9F9F9F] ">FL 33134 USA</p>
+            </div>
+
+            <div class="flex-col justify-center items-center">
+                <p class="text-[16px] text-[#9F9F9F] ">Links</p>
+
+                <ul>
+                    <li class="text-[16px] mt-10 font-medium ">Home</li>
+                    <li class="text-[16px] mt-10 font-medium ">Shop</li>
+                    <li class="text-[16px] mt-10 font-medium ">About</li>
+                    <li class="text-[16px] mt-10 font-medium ">Contact</li>
+                </ul>
+            </div>
+
+            <div class="flex-col justify-center items-center">
+                <p class="text-[16px] text-[#9F9F9F] ">Help</p>
+                <ul>
+                    <li class="text-[16px] mt-10 font-medium ">Payment Options</li>
+                    <li class="text-[16px] mt-10 font-medium ">Returns</li>
+                    <li class="text-[16px] mt-10 font-medium ">Privacy Policies</li>
+                </ul>
+            </div>
+
+            <div class="flex-col justify-center items-center">
+
+                <div class="flex-col">
+
+
+                    <p class="text-[16px] text-[#9F9F9F] mb-10 ">Newsletter</p>
+                    <input type="text" placeholder="Enter Your Email Adress">
+                    <hr>
+                    <button>Subscribe</button>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <hr class="mt-20 border-[#c7c7c7]">
+        <p class="flex justify-start items-startjustify-start font-extralight mt-10">2023 funiro. All rights reserved
+        </p>
+
+
+    </div>
+</footer>
 
 </html>
